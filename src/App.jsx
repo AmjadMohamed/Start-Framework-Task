@@ -10,7 +10,7 @@ function App() {
   const router = createBrowserRouter(
     [
       {
-        path: '',
+        path: '/',
         element: <Layout />,
         children: [
           {
@@ -18,15 +18,15 @@ function App() {
             element: <Home />
           },
           {
-            path: '/about',
+            path: 'about',
             element: <About />
           },
           {
-            path: '/portfolio',
+            path: 'portfolio',
             element: <Portfolio />
           },
           {
-            path: '/contact',
+            path: 'contact',
             element: <Contact />
           },
           {
@@ -35,7 +35,10 @@ function App() {
           }
         ]
       }
-    ]
+    ],
+    {
+      basename: '/Start-Framework-Task'
+    }
   )
 
   return (
